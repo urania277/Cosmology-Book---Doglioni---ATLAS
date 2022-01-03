@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%% author.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample root file for your "contribution" to a contributed volume
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%% Springer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[graybox]{svmult}
+
+% choose options for [] as required from the list
+% in the Reference Guide
+
+\usepackage{type1cm}        % activate if the above 3 fonts are
+                            % not available on your system
+%
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\usepackage{multicol}        % used for the two-column index
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+
+
+\usepackage{newtxtext}       % 
+\usepackage[varvw]{newtxmath}       % selects Times Roman as basic font
+
+%Bibliography - doing the same thing as S. Kulkarni
+\usepackage[square,comma,sort&compress,numbers]{natbib}
+\bibliographystyle{unsrtnat}
+
+% see the list of further useful packages
+% in the Reference Guide
+
+\makeindex             % used for the subject index
+                       % please use the style svind.ist with
+                       % your makeindex program
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\title{Searching for Dark matter with the ATLAS detector}
+% Use \titlerunning{Short Title} for an abbreviated version of
+% your contribution title if the original one is too long
+\author{Prof. Caterina Doglioni, Prof. Dan Tovey}
+% Use \authorrunning{Short Title} for an abbreviated version of
+% your contribution title if the original one is too long
+\institute{Caterina Doglioni \at University of Manchester and Lund University \email{caterina.doglioni@cern.ch}
+\and Dan Tovey \at University of Sheffield \email{dan.tovey@cern.ch}}
+%
+%
+\maketitle
+
+\abstract*{Each chapter should be preceded by an abstract (no more than 200 words) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter.
+Please use the 'starred' version of the \texttt{abstract} command for typesetting the text of the online abstracts (cf. source file of this chapter template \texttt{abstract}) and include them with the source files of your manuscript. Use the plain \texttt{abstract} command if the abstract is also to appear in the printed version of the book.}
+
+\abstract{Each chapter should be preceded by an abstract (no more than 200 words) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter.\newline\indent
+Please use the 'starred' version of the \texttt{abstract} command for typesetting the text of the online abstracts (cf. source file of this chapter template \texttt{abstract}) and include them with the source files of your manuscript. Use the plain \texttt{abstract} command if the abstract is also to appear in the printed version of the book.}
+
+
+\section{Introduction}
+\label{sec:particle-collisions-atlas}
+
+Experiments at particle accelerators have revealed much about the nature of visible (ordinary) matter, starting from the first prototypes that aided the discovery of the proton and the antiproton \cite{antiproton} to the recent discovery of the Higgs boson \cite{Aad:2012tfa,Higgs-feature}. All of the particles observed so far are part of the Standard Model of Particle Physics, describing the fundamental components of matter and their non-gravitational interactions. 
+
+As discussed in Chapter \ref{chapter:Theory}, the most powerful accelerator ever built is the Large Hadron Collider (LHC) at CERN in Geneva \cite{LHC2008, LHC}, accelerating protons and colliding them with a total energy of 13 TeV. According to Einstein’s most famous equation, $E=mc^2$, the more energy (E) the more massive particles (with a mass m) one can create (13 TeV corresponds to roughly 14 thousand times the rest mass of a proton). The hope is that at the LHC we can create massive dark matter particles by colliding known particles, in the same way we create the Higgs boson in proton-proton collisions. 
+
+Particles are regularly accelerated to very high energies in the universe in "natural" particle accelerators, such as supernovae explosions, and then collide with other particles in our atmosphere. Cosmic rays, for example, are particles that are generated in outer space and make it to Earth. However, the advantage of laboratory particle accelerators such as the LHC is that there we know the initial conditions of the collisions - namely the type and energy of the particles being collided. We can also create a large (and known) number of collisions and observe them in a controlled environment. These are essential features for detecting dark matter particles at experiments like ATLAS. 
+
+The ATLAS experiment \cite{ATLAS2008,ATLAS} is located at one of the collision points of the Large Hadron Collider, and it is one of the largest particle detectors ever built. 
+
+[image of the ATLAS experiment]
+
+It is considered a general-purpose experiment since its layout and material permit it to detect most of the collision products in the form of particles that have sizable interactions with the detector material, therefore allowing scientists to study a wide variety of physics processes. 
+
+\section{Section 2}
+\label{sec:particle-collisions-atlas}
+
+
+
+%%%%%%%%
+
+\runinhead{Run-in Heading Boldface Version} Use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}.
+
+\subruninhead{Run-in Heading Boldface and Italic Version} Use the \LaTeX\ automatism for all your cross-refer\-ences and citations as has already been described in Sect.~\ref{sec:2}\index{paragraph}.
+
+\subsubruninhead{Run-in Heading Displayed Version} Use the \LaTeX\ automatism for all your cross-refer\-ences and citations as has already been described in Sect.~\ref{sec:2}\index{paragraph}.
+
+\begin{svgraybox}
+If you want to emphasize complete paragraphs of texts we recommend to use the newly defined class option \verb|graybox| and the newly defined environment \verb|svgraybox|. This will produce a 15 percent screened box 'behind' your text.
+
+If you want to emphasize complete paragraphs of texts we recommend to use the newly defined class option and environment \verb|svgraybox|. This will produce a 15 percent screened box 'behind' your text.
+\end{svgraybox}
+
+\begin{trailer}{Trailer Head}
+If you want to emphasize complete paragraphs of texts in an \verb|Trailer Head| we recommend to
+use  \begin{verbatim}\begin{trailer}{Trailer Head}
+...
+\end{trailer}\end{verbatim}
+\end{trailer}
+%
+\begin{question}{Questions}
+If you want to emphasize complete paragraphs of texts in an \verb|Questions| we recommend to
+use  \begin{verbatim}\begin{question}{Questions}
+...
+\end{question}\end{verbatim}
+\end{question}
+\eject%
+\begin{important}{Important}
+If you want to emphasize complete paragraphs of texts in an \verb|Important| we recommend to
+use  \begin{verbatim}\begin{important}{Important}
+...
+\end{important}\end{verbatim}
+\end{important}
+%
+\begin{warning}{Attention}
+If you want to emphasize complete paragraphs of texts in an \verb|Attention| we recommend to
+use  \begin{verbatim}\begin{warning}{Attention}
+...
+\end{warning}\end{verbatim}
+\end{warning}
+
+\begin{programcode}{Program Code}
+If you want to emphasize complete paragraphs of texts in an \verb|Program Code| we recommend to
+use
+
+\verb|\begin{programcode}{Program Code}|
+
+\verb|\begin{verbatim}...\end{verbatim}|
+
+\verb|\end{programcode}|
+
+\end{programcode}
+%
+\begin{tips}{Tips}
+If you want to emphasize complete paragraphs of texts in an \verb|Tips| we recommend to
+use  \begin{verbatim}\begin{tips}{Tips}
+...
+\end{tips}\end{verbatim}
+\end{tips}
+\eject
+%
+\begin{overview}{Overview}
+If you want to emphasize complete paragraphs of texts in an \verb|Overview| we recommend to
+use  \begin{verbatim}\begin{overview}{Overview}
+...
+\end{overview}\end{verbatim}
+\end{overview}
+\begin{backgroundinformation}{Background Information}
+If you want to emphasize complete paragraphs of texts in an \verb|Background|
+\verb|Information| we recommend to
+use
+
+\verb|\begin{backgroundinformation}{Background Information}|
+
+\verb|...|
+
+\verb|\end{backgroundinformation}|
+\end{backgroundinformation}
+\begin{legaltext}{Legal Text}
+If you want to emphasize complete paragraphs of texts in an \verb|Legal Text| we recommend to
+use  \begin{verbatim}\begin{legaltext}{Legal Text}
+...
+\end{legaltext}\end{verbatim}
+\end{legaltext}
+%
+\begin{acknowledgement}
+Part of this text originally appeared as an ATLAS Feature Article at \url{https://atlas.cern/updates/feature/dark-matter}. 
+
+Research by C. D. is part of projects that have received funding from the European Research Council under the European Union’s Horizon 2020 research and innovation program (grant agreement 679305 and 101002463) and from the Swedish Research Council. Research by D. T. is part of a project that has received funding from the European Research Council under the European Union’s Horizon 2020 research and innovation program (grant agreement 694202) and from the UK Science and Technology Facilities Council (STFC).
+
+We thank the following collaborators for useful input and review (including on the original feature article): Katarina Anthony, Antonio Boveia, Oleg Brandt, Carl Gwilliam, Andreas Hoecker, Marie-Helene Genest, Zachary Marshall, Christian Ohm, Giordon Stark. 
+\end{acknowledgement}
+
+\newpage
+\bibliography{Refs}
+
+%\input{references}
+\end{document}
